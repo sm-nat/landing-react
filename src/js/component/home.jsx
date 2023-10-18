@@ -6,15 +6,15 @@ import ReactDOM from "react-dom";
 // Navbar
 const Navbar = () => {
 	return (
-		<div className="container-fluid ms-auto">
-			<nav className="navbar navbar-expand-sm navbar-light bg-light">
-				<div className="container-fluid">
+		<div className="container-fluid ">
+			<nav className="navbar navbar-expand-sm navbar-light bg-light ">
+				<div className="container-fluid ">
 					<a className="navbar-brand" href="#">Start Bootstrap</a>
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<div className="collapse navbar-collapse" id="navbarNav">
-						<ul className="navbar-nav">
+						<ul className="navbar-nav ms-auto">
 							<li className="nav-item">
 								<a className="nav-link active" aria-current="page" href="#">Home</a>
 							</li>
@@ -58,7 +58,7 @@ Jumbotron.propTypes = {
 // Card
 const Card = (props) => {
 	return (
-		<div className="card">
+		<div className="card col mb-4">
 			<img className="card-img-top" src={props.imageUrl} alt="Card cap" />
 			<div className="card-body">
 				<h5 className="card-title">{props.title}</h5>
@@ -95,7 +95,7 @@ ReactDOM.render(
 			buttonURL="#"
 			buttonLabel="Call to action!"
 		/>
-		<div className="card-group" style={{ display: "flex" }}>
+		<div className="card-group" >
 			<Card
 				title="Happines"
 				imageUrl="https://picsum.photos/id/106/200/300"
